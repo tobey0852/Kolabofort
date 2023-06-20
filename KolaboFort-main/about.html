@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KolaboFort</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<nav> 
+			<div class="header-left">
+				<a href="index.html"><img src="images/logo.png" alt="KolaboFort logo" style="max-width: 60px; height: auto;"></a>
+				<h1><a href="index.html">KolaboFort</a></h1>
+			</div>
+			<ul class="header-right">
+					<li class="top-link"><a href="index.html" class="topmost-link">Home</a></li>
+					<li class="top-link services-dropdown show"><a id="link-drop" class="show topmost-link" href="index.html#services">Services
+						<div class="services-list show-drop">
+							<ul>
+							<li><a href="#Escrow">Escrow</a> </li>
+							<li><a href="#Pooling">Pooling</a> </li>
+							<li><a href="#Outsourcing">Outsourcing</a> </li>
+							<li><a href="#Research">Market Research</a> </li>
+						</ul>
+						</div></a>
+					</li>
+					<li class="top-link"><a href="" class="topmost-link">About</a></li>
+					<li class="top-link"><a href="#contact" class="topmost-link">Contact</a></li>
+			</ul>
+
+			<div class="dropdown">
+			 <img onclick="myFunction()" src="images/list.png" class="dropbtn"/>
+			  <div id="myDropdown" class="dropdown-content">
+			    <a href="index.html" class="topmost-link">Home</a>
+			    <a id="link-drop" class="show topmost-link" href="index.html#services">Services</a>
+			    <a href="about.html" class="topmost-link">About</a>
+			    <a href="#contact" class="topmost-link">Contact</a>
+			  </div>
+			</div>
+	</nav>
+		<div class="header-image">
+				<div>
+					<video autoplay muted="true" width="100%"> <source src="video/top video.mp4" type="video/mp4"></video>
+				</div>
+				 <div class="header-image-link"><a href="https://api.whatsapp.com/send?phone=07018144992">Start here</a></div>
+		</div>
+		<section>
+			<div class="about">
+				<div class="subheading"><h2 >About Kolabofort</h2>
+				</div>
+				<div>KolaboFort is a comprehensive business portal in Nigeria. Our focus is on how people can work together and get results. We are addressing the immediate need of individuals, industries,  organizations and communities. We are contributing to the struggle to help others make reasonable and regular income and finding people to collaborate with. We set the foundation where people meet and make substantial progress together through transparent and predictable requirements. This is a new route to economic empowerment.
+				</div>
+
+			</div>
+		</section>
+		
+	<footer id="contact">
+		<p>To get started and for more information, please contact</p>
+		<div class="contact">
+			<div class="contact-list"><img src="images/whatsapp.png" alt="contact number" style="width: 25px; height: auto;"> <a href="https://api.whatsapp.com/send?phone=07018144992"> 07018144992</a></div>
+			<div class="contact-list"><img src="images/facebook.png" align="facebook contact"style="width: 25px; height: auto;"> <a href="https://www.facebook.com/KolaboForte/">KolaboFort</a></div>
+			<div class="contact-list"><img src="images/instagram.png" alt="instagram contact" style="width: 25px; height: auto;"> <a href="https://www.instagram.com/KolaboFort/">KolaboFort</a></div>
+			<div class="contact-list"><img src="images/twitter.png" alt="twitter contact" style="width: 25px; height: auto;"> <a href="https://twitter.com/kolabof">@kolaboF</a></div>
+			<div class="contact-list"><img src="images/email.png" alt="email contact" style="width: 25px; height: auto;"> <a href="mailto:info@kolabofort.com"> info@kolabofort.com</a></div>		
+		</div>
+		
+	</footer>
+	<a href="https://api.whatsapp.com/send?phone=07018144992" class="chat"><img src="images/chat.png" alt="chat with us" style="width: 35px; height: auto;"></a>
+
+
+	<script type="text/javascript">
+		function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		  var dropdowns = document.getElementsByClassName("dropdown-content");
+		  var i;
+		  for (i = 0; i < dropdowns.length; i++) {
+		   var openDropdown = dropdowns[i];
+		   if (openDropdown.classList.contains('show')) {
+		   openDropdown.classList.remove('show');
+		  }
+		``}
+		}
+	}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,646 @@
+*{
+	box-sizing: border-box;
+}
+body{font-family: font-normal;
+	font-size: 16px;
+	margin: 0;
+	line-height: 30px;
+}
+@font-face{
+	font-family: "font-bold";
+	src:url('Noto_Sans/NotoSans-Bold.ttf');
+}
+@font-face{
+	font-family: "font-bold-italic";
+	src:url('Noto_Sans/NotoSans-BoldItalic.ttf');
+}
+@font-face{
+	font-family:"font-italic";
+	src:url('Noto_Sans/NotoSans-Italic.ttf');
+}
+@font-face{
+	font-family: "font-normal";
+	src:url('Noto_Sans/NotoSans-Regular.ttf');
+}
+
+/*Header*/
+nav{
+	background-color:  #f6f6f6;
+    color: #1b639e;
+    padding: 0px 50px;
+    display: flex;
+    margin-top: 0;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+}
+.header-left {
+	display: flex;
+	align-items: center;
+	margin-left: inherit;
+}
+.header-left img{
+	margin-top: 5px;
+}
+nav h1{
+	margin: 0 20px;
+	font-size: 32px;
+	text-shadow: 5px 5px 3px lightgrey;
+}	
+
+.header-right{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+.top-link{
+	padding: 10px 15px;
+	font-size: 16px;
+	color: #1b639e;
+	width: fit-content;
+
+
+}
+.top-link .topmost-link{
+	text-decoration: none;
+	color: #1b639e;
+}
+nav h1 a{
+	text-decoration: none;
+	color: #1b639e;
+}
+
+.top-link .topmost-link:hover{
+	text-decoration: none;
+	color: black;
+	background-color: #fff;
+	padding: 7px 10px;
+	margin: 0;
+
+}	
+.top-link ul{ 
+	margin: 0;
+	padding: 0;
+}
+
+.services-list{
+	list-style: none;
+	margin: 0 auto;
+	font-size: 13px;
+	z-index: 10;
+	position: absolute;
+	background-color: #fff;
+	padding: 10px 15px;
+    margin-left: -10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    display: none;
+}
+.services-list a:hover{
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 0px 10px;
+	background-color: lightgrey;
+	margin: 0;
+
+}
+.services-list a{
+	text-decoration: none;
+	color: black;
+	margin: 0;
+}
+.services-list li{
+	list-style: none;
+	margin-bottom: 5px;
+	cursor: pointer;
+	width: 30vw;
+}
+.show:hover ~ .show-drop, 
+.show:focus ~ .show-drop,
+.services-list:hover{
+	display: block;
+
+}
+.header-image{
+	margin-top: 72px;
+	height: fit-content;
+/*	overflow-y: hidden;
+	position: relative;*/
+}
+.header-image img{
+	position: absolute;
+}
+.header-image div{
+	width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 36px;
+    background-color: #004aac;
+}
+.header-image div h3, .header-image div h1{
+	width: 75%;
+	min-width: 300px;
+}
+.header-image div h3{
+	color: #1b639e;
+}
+.header-image div h1{
+	font-family: "font-bold";
+	font-size: 38px;
+	line-height: 50px;
+}
+.header-image-link{
+	background-color: #004aac;
+	padding: 10px 40px;
+
+}
+.header-image-link a{
+	background-color: #00dbff;
+    text-decoration: none;
+    color: #004aac;
+    border-radius: 10px;
+    padding: inherit;
+    font-size: 18px;
+ }
+.header-image-link a:hover{
+	text-decoration: none;
+	padding: inherit;
+	border-radius: 10px;
+}
+
+/*Mid-page Styles*/
+.benefits{
+    padding: 10px 50px;
+    display: flex;
+    margin-top:5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.benefits ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: unset;
+}
+.benefits li{
+	list-style: none;
+	margin: 21px 30px;
+    width: fit-content;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #4a4a4a;
+    border-radius: 5px;
+    padding: 7px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #1b639e;
+}
+
+
+/*Each Services Section*/
+.styled-header{
+	display: flex;
+	justify-content: center;
+}
+
+.styled-header>div{
+	width:fit-content;
+}
+.header{
+	width: fit-content;
+	font-size: 34px;
+	color: #004aac;
+}
+.underline{
+	width: 50px;
+	margin-top: 10px;
+	border-bottom: 3px solid #1b639e;
+}
+
+.main-header{
+	margin-top: 15px;
+}
+
+section{
+	margin: 10 0px;
+	padding: 10px 0;
+}
+.services-top{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0px 10px;
+}
+.services-top img{
+	padding: 10px;
+	border-radius: 20px;
+}
+.image{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.text{
+	width: 50%;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: ;
+}
+.text p, .text h3{
+	width: 90%;
+	line-height: 32px;
+}
+.text p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text h3{
+	font-family: font-italic;
+	text-align: center;
+	color: #3a909e;
+}
+.services div.subheading{
+	display: flex;
+	justify-content: center;
+}
+.services div h2{
+	width: fit-content;
+	background-color: #004aac;
+	color: white;
+	padding: 9px 50px;
+	margin: 30px 0px;
+	border-radius: 20px;
+}
+.illustrations{
+	background-color:  #f6f6f6;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px 0px;
+	justify-content: space-around;
+	align-items: center;
+}
+.illustrations div{
+	width: 20%;
+	min-width: 200px;
+}
+.steps{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+.illustrations p{
+	width: 60%;
+	line-height: 28px;
+    font-size: 14px;
+    color: slategrey;
+    min-width: 200px;
+    font-family: font-italic;
+    padding: 0 15px;
+}
+
+/*Price Section Styles*/
+.charges-header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.charges-header p{
+	font-size: 13px;
+	font-family: font-italic;
+}
+.price{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.price-list-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.circle{
+	border-radius: 50%;
+}
+.tag{
+	position:absolute;
+	width:65px;
+	background: white;
+	height:65px;
+	font-size: 13px;
+	box-shadow: 0px 3px 7px rgba(0,0,0,0.2);
+}
+.tag2{ 
+	height:2px;
+	background-color: white;
+ }
+.flex-row, .flex-col{
+	display: flex;
+}
+.center-justify{
+	justify-content: center;
+}
+.center-align{
+	align-items: center;
+}
+.price-list{
+	width: fit-to-content;
+	text-align: center;
+	margin: 40px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 225px;
+	border-radius: 20px;
+	box-shadow: 0 0 20px rgba( 0, 0, 0, 0.15);
+}
+.cost{
+	background-color: #1b639e;
+	border-radius: 20px 20px 0px 0px;
+	color: white;
+	padding:47px 0px;
+}
+.cost-amount{
+	font-size: 21px;
+	font-family: font-bold;
+}
+.naira{
+	text-decoration: line-through;
+	text-decoration-style: double;
+}
+.charges{
+	background-color: #f5f5ff;
+	padding:40px 0px;
+	border-radius:0px 0px 20px 20px;
+}
+.chrges-amount{
+	font-size: 24px;
+}
+.research-charges, .charges-header p{
+	font-family: font-italic;
+	text-align: center;
+	padding: 10px 20px;
+	line-height: 18px;
+	font-size: 13px;
+}
+
+
+/*Footer*/
+footer{
+	background-color:  #f6f6f6;
+    color: #1b639e;
+    padding: 10px 50px;
+    display: flex;
+   	flex-direction: column;
+    margin-top: 0;
+    justify-content: space-around;
+}
+footer p{
+	font-family: font-italic;
+	text-align: center;
+}
+.contact{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contact-list{
+	padding: 10px;
+	margin: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+.contact-list img{
+	margin: 0 3px;
+}
+.contact-list a{
+	color: #1b639e;
+	text-decoration: none;
+}
+.chat{
+	position: fixed;
+    bottom: 0;
+    left: auto;
+    right: 0;
+   padding: 20px;
+}
+
+
+/*About page styles*/
+.about{
+	margin: 0px 0px 100px 0px;
+	padding: 20px 40px;
+
+}
+
+.about h2{
+	width: fit-content;
+	background-color: #004aac;
+	color: white;
+	padding: 9px 50px;
+	margin: 30px 0px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+
+/*Dropdown Menu Styles*/
+.dropbtn {
+  width: 23px;
+  height:auto;
+  
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #f6f6f6;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: container-width;
+  box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 25px 37px;
+  font-size: 13px;
+  width: 75vw;
+  min-height: 50vh;
+  right: 0px;
+  top: 54px
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Responsive Designs*/
+@media screen and (max-width: 768px){
+	.header-right{
+		display: none;
+	}
+	nav{
+		padding: 0px 20px;
+	}
+	.header-image div h1{
+		font-size: 31px;
+	}
+	.header{
+		margin: 0;
+	}
+	.benefits{
+		margin-top: 0;
+	}
+}
+@media screen and (min-width: 767px){
+	.dropdown{
+		display: none;
+	}
+}
+@media screen and (max-width: 629px){
+	.header-image div{
+		line-height: 28px;
+	}
+	.header-image div h1{
+		line-height: 36px;
+	}
+}
+@media screen and (max-width: 600px){
+	.header-image{
+		height: 280px;
+		margin-top: 54px;
+	}  
+	.header-left img{
+		width: 50px;
+	}
+	nav h1{
+		font-size: 28px;
+}
+	nav{
+		padding: 0px 10px;
+	}
+	.header-image div{
+		line-height: 20px;
+	}
+	.header-image div h1{
+		line-height: 34px;
+		font-size: 27px;
+	}
+	.header-image div h3{
+		line-height: 30px;
+		font-size: 19px;
+	}
+	.header{
+		font-size: 28px;
+	}
+	.benefits{
+		margin-top: 100px;
+	}
+	.benefits li{
+		margin: 15px 10px;
+		padding: 7px 10px;
+	}
+	.services div h2, .about h2 {
+		font-size: 20px;
+		padding: 9px 20px;
+	}
+	.about{
+		margin-top: 0;
+	}
+}
+@media screen and (max-width: 480px){   
+	.header-image{
+		margin-top: 54px;
+	}
+	.header-left img{
+		width: 40px;
+	}
+	nav h1{
+		font-size: 24px;
+	}
+	nav{
+		padding: 0px 10px;
+	}
+
+	.header-image p{
+		padding: 5px 10px;
+		font-size: 12px;
+		margin: 5px;
+	}
+	.header-image div h1{
+		line-height: 29px;
+		font-size: 22px;
+	}
+	.header-image div h3{
+		line-height: 26px;
+		font-size: 18px;
+	}
+	.header{
+		font-size: 20px;
+		margin-top: 0;
+	}
+	.benefits{
+		margin-top: 0;
+	}
+	.services div h2, .about h2{
+		font-size: 18px;
+		padding: 9px 20px;
+	}
+	.services-top img{
+	padding: 5px;
+	}
+	.chat{
+		padding: 10px;
+	}
+	.contact-list{
+		margin: 0;
+		font-size: 13px;
+	}
+	.about{
+		margin-top: 0;
+	}
+}
+
+
+
+
+
+
